@@ -1,0 +1,9 @@
+{
+  "name": "nishanth-portfolio-local",
+  "private": true,
+  "version": "54.0.0",
+  "description": "Nishanth Reddy portfolio with a completely local NR AI Assistant",
+  "scripts": {
+    "start": "python -m http.server 8080"
+  }
+}
