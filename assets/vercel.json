@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/nr-ai.js": {
+      "maxDuration": 30
+    }
+  }
+}
