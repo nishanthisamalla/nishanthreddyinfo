@@ -170,6 +170,31 @@ body.light-mode .back-to-top{background:#fff;color:#17171b;border-color:rgba(20,
 .code-vault.is-unlocked .vault-message p,.code-vault.is-unlocked .vault-lock,.code-vault.is-unlocked .vault-unlocked{display:none}
 body.light-mode .door-brand{background:linear-gradient(135deg,#6f4300,#b77700 22%,#ffe69a 48%,#b77700 72%,#5d3800);-webkit-background-clip:text;background-clip:text;color:transparent}
 @media(max-width:800px){.door-brand{font-size:36px;min-width:92px;padding:10px 16px}.code-vault.is-unlocked .vault-message h3{font-size:clamp(28px,8vw,40px)}}
+
+/* v45 K-VAULT SAMPLE KNOWLEDGE BASE */
+.kvault-kb{margin:34px auto 0;max-width:1120px;border:1px solid rgba(255,255,255,.14);background:rgba(7,8,12,.78);box-shadow:0 22px 60px rgba(0,0,0,.25);border-radius:18px;padding:24px;text-align:left}
+.kvault-kb[hidden]{display:none}
+.kvault-kb-head{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;padding-bottom:20px;border-bottom:1px solid rgba(255,255,255,.1)}
+.kvault-kb-kicker{font:9px var(--mono);letter-spacing:.16em;color:#d6a94b;margin-bottom:8px}
+.kvault-kb-head h3{margin:0;color:#fff;font-size:28px;letter-spacing:-.03em}
+.kvault-kb-head p{margin:7px 0 0;color:#9ca0aa;font:12px var(--mono);max-width:620px;line-height:1.6}
+.kvault-kb-status{padding:8px 11px;border:1px solid rgba(210,55,55,.5);background:#8e2020;color:#fff;font:8px var(--mono);letter-spacing:.12em;white-space:nowrap}
+.kvault-kb-layout{display:grid;grid-template-columns:220px 1fr;gap:24px;padding-top:22px}
+.kvault-kb-sidebar{display:flex;flex-direction:column;gap:7px}
+.kvault-article-tab{appearance:none;text-align:left;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.035);color:#9ca0aa;padding:13px 14px;border-radius:9px;font:10px var(--mono);cursor:pointer;transition:.2s}
+.kvault-article-tab:hover,.kvault-article-tab.active{background:rgba(214,169,75,.12);border-color:rgba(214,169,75,.55);color:#f0d48b}
+.kvault-article{min-width:0;padding:2px 6px}
+.kvault-article-meta{font:9px var(--mono);letter-spacing:.13em;color:#d6a94b;margin-bottom:9px}
+.kvault-article h4{margin:0 0 17px;color:#fff;font-size:30px;line-height:1.12}
+.kvault-article h5{margin:21px 0 7px;color:#d9b45c;font:10px var(--mono);letter-spacing:.1em}
+.kvault-article p{margin:0 0 10px;color:#c2c5cc;font:12px var(--mono);line-height:1.75}
+body.light-mode .kvault-kb{background:rgba(255,255,255,.92);border-color:rgba(20,20,30,.14);box-shadow:0 18px 50px rgba(30,30,40,.08)}
+body.light-mode .kvault-kb-head{border-color:rgba(20,20,30,.1)}
+body.light-mode .kvault-kb-head h3,body.light-mode .kvault-article h4{color:#16171b}
+body.light-mode .kvault-kb-head p,body.light-mode .kvault-article p{color:#50545c}
+body.light-mode .kvault-article-tab{background:rgba(20,20,30,.035);border-color:rgba(20,20,30,.11);color:#555a63}
+@media(max-width:720px){.kvault-kb{padding:17px;margin-top:22px}.kvault-kb-head{display:block}.kvault-kb-status{display:inline-block;margin-top:13px}.kvault-kb-layout{grid-template-columns:1fr;gap:15px}.kvault-kb-sidebar{display:grid;grid-template-columns:1fr 1fr 1fr}.kvault-article-tab{padding:10px 8px;font-size:8px}.kvault-article h4{font-size:23px}}
+
 </style><style id="nishanth-v29-light-title-fixes">
 /* v29: requested readable white + blue light-mode treatment on the named pages. */
 body.light-mode .about .light-accent-title,
@@ -283,8 +308,42 @@ body.light-mode .door-brand{color:#9b6500!important;text-shadow:0 1px 0 rgba(255
 .door-brand{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:1px!important;line-height:.92!important;white-space:normal!important;text-align:center!important}
 .door-brand-the{display:block!important;font-size:.58em!important;letter-spacing:-.04em!important}
 .door-brand-k{display:block!important;font-size:1em!important;letter-spacing:-.055em!important}
-</style><meta name="portfolio-build" content="v44 - The / K-Vault stacked branding">
-</head><body>
+</style><meta name="portfolio-build" content="v54 - Local NR AI Assistant">
+<style>
+.kvault-kb-opening{animation:kvVaultKnowledgeReveal .9s cubic-bezier(.2,.8,.2,1) both}
+@keyframes kvVaultKnowledgeReveal{0%{opacity:0;transform:perspective(900px) rotateX(-14deg) translateY(30px) scale(.97);filter:blur(5px)}45%{opacity:1;transform:perspective(900px) rotateX(5deg) translateY(-5px) scale(1.01);filter:blur(0)}100%{opacity:1;transform:perspective(900px) rotateX(0) translateY(0) scale(1);filter:blur(0)}}
+@media(prefers-reduced-motion:reduce){.kvault-kb-opening{animation:none}}
+</style><style id="kvault-kb-final-style">
+.kvault-kb-opening{animation:kvVaultKnowledgeRevealFinal .95s cubic-bezier(.2,.8,.2,1) both}
+@keyframes kvVaultKnowledgeRevealFinal{0%{opacity:0;transform:perspective(900px) rotateX(-14deg) translateY(28px) scale(.97);filter:blur(5px)}45%{opacity:1;transform:perspective(900px) rotateX(4deg) translateY(-4px) scale(1.01);filter:blur(0)}100%{opacity:1;transform:perspective(900px) rotateX(0) translateY(0) scale(1);filter:blur(0)}}
+@media(prefers-reduced-motion:reduce){.kvault-kb-opening{animation:none}}
+</style>
+<style id="kvault-kb-v51-style">
+.kvault-access-granted{background:#16723a!important;border-color:rgba(76,220,130,.65)!important;color:#fff!important}
+.kvault-kb-sidebar{gap:7px}
+.kvault-article-tab{line-height:1.35}
+@media(max-width:720px){
+  .kvault-kb-sidebar{grid-template-columns:1fr 1fr}
+}
+</style><style id="kvault-d365-intro-v52">
+.kvault-section-group{display:flex;flex-direction:column;gap:5px}
+.kvault-subsection-tab{appearance:none;text-align:left;margin-left:18px;width:calc(100% - 18px);border:0;border-left:1px solid rgba(214,169,75,.42);background:transparent;color:#8f939c;padding:8px 12px;font:9px var(--mono);cursor:pointer;transition:.2s}
+.kvault-subsection-tab:hover,.kvault-subsection-tab.active{color:#d6a94b;border-left-color:#d6a94b;background:rgba(214,169,75,.07)}
+.kvault-article ul{margin:14px 0 0;padding-left:20px;color:#c2c5cc}
+.kvault-article li{margin:0 0 12px;font:12px var(--mono);line-height:1.75}
+.kvault-article li strong{color:#d9b45c}
+.kvault-article a{color:#d6a94b;text-decoration:none}
+.kvault-article a:hover{text-decoration:underline}
+.kvault-reference-links{margin-top:18px;padding-top:12px;border-top:1px solid rgba(255,255,255,.08);font:9px var(--mono);color:#8f939c}
+.kvault-reference-links span{color:#d6a94b;margin-right:8px}
+.kvault-reference-links a{margin-right:8px}
+body.light-mode .kvault-subsection-tab{color:#626771;border-left-color:rgba(120,90,20,.3)}
+body.light-mode .kvault-subsection-tab:hover,body.light-mode .kvault-subsection-tab.active{color:#6f5314;border-left-color:#6f5314;background:rgba(214,169,75,.1)}
+body.light-mode .kvault-article ul{color:#50545c}
+body.light-mode .kvault-article li strong{color:#765814}
+body.light-mode .kvault-article a{color:#315ea8}
+body.light-mode .kvault-reference-links{border-color:rgba(20,20,30,.1);color:#626771}
+</style></head><body>
 <div class="loader" id="loader"><div class="loader-inner"><div class="micro">INITIALIZING SYSTEM</div><div class="loader-name">NISHANTH REDDY</div><div class="loader-role">AZURE DEVOPS ENGINEER · ENTERPRISE DELIVERY</div><div class="percent" id="percent">0%</div><div class="load-line"><i id="loadBar"></i></div><div class="load-meta"><span>LOADING MODULES...</span><span>SECURE CONNECTION</span></div></div></div>
 <header class="nav"><a class="brand" href="#home">Nishanth Reddy</a><nav class="navlinks"><a href="#home">Home</a><a href="#about">About</a><a href="#skills">Expertise</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#certifications">Certifications</a><a href="#vault">NR's K-Vault</a><a href="#contact">Contact</a></nav><div class="nav-actions"><button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode"><span class="theme-icon" aria-hidden="true">☼</span><span class="theme-label">LIGHT</span></button><a class="view linkedin-view" href="https://in.linkedin.com/in/nishanth-isamalla" target="_blank" rel="noopener" aria-label="View Nishanth Reddy on LinkedIn"><img src="assets/linkedin-logo.svg" alt="LinkedIn" class="linkedin-logo"><span class="linkedin-arrow">↗</span></a></div></header>
 <div class="scroll-progress" id="progress"></div><div class="hint">↓ SCROLL TO SCRUB TIMELINE</div><div class="counter" id="counter">01 / 09</div>
@@ -307,7 +366,35 @@ body.light-mode .door-brand{color:#9b6500!important;text-shadow:0 1px 0 rgba(255
 <div class="cert-card"><div class="cert-logo"><img src="assets/hpe.svg" alt="HPE"></div><div><div class="cert-title">HPE Training on PHP WORDPRESS</div><div class="cert-meta">HEWLETT PACKARD ENTERPRISE · JUN 2018</div></div></div>
 </div><div class="recognitions"><div class="recognition-heading"><span class="section-tag">// RECOGNITION WORTH REMEMBERING</span></div><div class="recognition"><span class="recognition-star">★</span><p>Recognition from leadership for successfully configuring and delivering an Azure DevOps pipeline for a key client project.</p></div><div class="recognition"><span class="recognition-star">★</span><p>Sparkling Star Award for effectively resolving complex Dynamics 365 environment upgrade challenges.</p></div><div class="recognition"><span class="recognition-star">★</span><p>Avanade ICOE recognition for driving successful production releases on an industry-critical project.</p></div></div></div></section>
 
-<section class="stage scene vault" id="vault"><div class="scene-inner vault-inner"><span class="section-tag">// NR'S K-VAULT</span><h2 class="scene-title vault-title">NR's K-Vault</h2><p class="scene-lead vault-lead">A Private Knowledge Space to Only the ones who have Access code shared</p><div class="vault-card code-vault" data-access-code="2026"><div class="vault-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><rect x="8" y="5" width="32" height="38" rx="4"></rect><rect x="12" y="9" width="24" height="30" rx="3"></rect><circle cx="24" cy="24" r="7"></circle><path d="M24 17v14M17 24h14"></path><path d="M6 13h2M40 13h2M6 35h2M40 35h2"></path></svg></div><div class="vault-visual security-door"><div class="door-frame"><div class="door-panel"><div class="door-brand"><span class="door-brand-the">The</span><span class="door-brand-k">K-Vault</span></div><div class="vault-steam" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><div class="door-reader"><span class="reader-light"></span><span>SECURITY ACCESS</span></div><div class="door-handle"></div><div class="door-bolts"></div></div><div class="door-glow"></div></div></div><div class="vault-message"><span class="vault-lock" id="vaultStatus">LOCKED</span><h3 id="vaultHeading">Enter the access code</h3><p id="vaultDescription">A secure knowledge vault for documents covering the technology I work with. Enter the correct code to unlock the vault.</p><div class="code-entry" aria-label="Vault security code"><div class="code-display" id="codeDisplay" aria-live="polite"><span class="code-placeholder">ENTER CODE</span></div><div class="keypad" id="vaultKeypad"><button type="button" data-key="1">1</button><button type="button" data-key="2">2</button><button type="button" data-key="3">3</button><button type="button" data-key="4">4</button><button type="button" data-key="5">5</button><button type="button" data-key="6">6</button><button type="button" data-key="7">7</button><button type="button" data-key="8">8</button><button type="button" data-key="9">9</button><button type="button" data-key="clear" class="key-action">CLR</button><button type="button" data-key="0">0</button><button type="button" data-key="back" class="key-action">⌫</button></div><div class="code-feedback" id="codeFeedback" aria-live="polite">4-DIGIT SECURITY CODE</div></div><div class="vault-unlocked" id="vaultUnlocked"><strong>ACCESS GRANTED</strong><span>The K-Vault is now unlocked.</span></div></div></div></div></section><section class="stage scene experience" id="experience"><div class="scene-inner"><span class="section-tag">// EXPERIENCE & DELIVERY</span><h2 class="scene-title light-accent-title">My Professional Journey</h2><p class="scene-lead">Enterprise delivery across Azure, DevOps, Dynamics 365, Power Platform and security operations.</p><div class="timeline">
+<section class="stage scene vault" id="vault"><div class="scene-inner vault-inner"><span class="section-tag">// NR'S K-VAULT</span><h2 class="scene-title vault-title">NR's K-Vault</h2><p class="scene-lead vault-lead">A Private Knowledge Space to Only the ones who have Access code shared</p><div class="vault-card code-vault" data-access-code="2026"><div class="vault-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><rect x="8" y="5" width="32" height="38" rx="4"></rect><rect x="12" y="9" width="24" height="30" rx="3"></rect><circle cx="24" cy="24" r="7"></circle><path d="M24 17v14M17 24h14"></path><path d="M6 13h2M40 13h2M6 35h2M40 35h2"></path></svg></div><div class="vault-visual security-door"><div class="door-frame"><div class="door-panel"><div class="door-brand"><span class="door-brand-the">The</span><span class="door-brand-k">K-Vault</span></div><div class="vault-steam" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><div class="door-reader"><span class="reader-light"></span><span>SECURITY ACCESS</span></div><div class="door-handle"></div><div class="door-bolts"></div></div><div class="door-glow"></div></div></div><div class="vault-message"><span class="vault-lock" id="vaultStatus">LOCKED</span><h3 id="vaultHeading">Enter the access code</h3><p id="vaultDescription">A secure knowledge vault for documents covering the technology I work with. Enter the correct code to unlock the vault.</p><div class="code-entry" aria-label="Vault security code"><div class="code-display" id="codeDisplay" aria-live="polite"><span class="code-placeholder">ENTER CODE</span></div><div class="keypad" id="vaultKeypad"><button type="button" data-key="1">1</button><button type="button" data-key="2">2</button><button type="button" data-key="3">3</button><button type="button" data-key="4">4</button><button type="button" data-key="5">5</button><button type="button" data-key="6">6</button><button type="button" data-key="7">7</button><button type="button" data-key="8">8</button><button type="button" data-key="9">9</button><button type="button" data-key="clear" class="key-action">CLR</button><button type="button" data-key="0">0</button><button type="button" data-key="back" class="key-action">⌫</button></div><div class="code-feedback" id="codeFeedback" aria-live="polite">4-DIGIT SECURITY CODE</div></div><div class="vault-unlocked" id="vaultUnlocked"><strong>ACCESS GRANTED</strong><span>The K-Vault is now unlocked.</span></div></div></div></div>
+<div class="kvault-kb" id="kvaultKnowledgeBase" hidden>
+  <div class="kvault-kb-head">
+    <div>
+      <div class="kvault-kb-kicker">K-VAULT // KNOWLEDGE VAULT</div>
+      <h3>Knowledge Vault</h3>
+      <p>Please find below documents for each of the section</p>
+    </div>
+    <div class="kvault-kb-status kvault-access-granted">ACCESS GRANTED</div>
+  </div>
+  <div class="kvault-kb-layout">
+    <aside class="kvault-kb-sidebar">
+      <button class="kvault-article-tab active" data-article="azure-devops">Azure DevOps</button>
+      <div class="kvault-section-group">
+        <button class="kvault-article-tab" data-article="dynamics-365-finance">Dynamics 365 Finance</button>
+        <button class="kvault-subsection-tab" data-article="d365-introduction">Introduction</button>
+      </div>
+      <button class="kvault-article-tab" data-article="power-platform">Power Platform</button>
+      <button class="kvault-article-tab" data-article="power-bi">Power BI</button>
+      <button class="kvault-article-tab" data-article="lcs">LCS</button>
+    </aside>
+    <article class="kvault-article">
+      <div class="kvault-article-meta" id="kvArticleMeta">AZURE DEVOPS</div>
+      <h4 id="kvArticleTitle">Azure DevOps</h4>
+      <div id="kvArticleBody"></div>
+    </article>
+  </div>
+</div>
+</section><section class="stage scene experience" id="experience"><div class="scene-inner"><span class="section-tag">// EXPERIENCE & DELIVERY</span><h2 class="scene-title light-accent-title">My Professional Journey</h2><p class="scene-lead">Enterprise delivery across Azure, DevOps, Dynamics 365, Power Platform and security operations.</p><div class="timeline">
 <div class="job current"><div class="year">JUN 15 2026<br>–<br>PRESENT</div><div><div class="role-kicker">ITINERIS</div><h3>Azure DevOps Engineer</h3><p>Current professional focus on managing and automating cloud environments with reliable enterprise delivery, CI/CD and modern cloud operations.</p><ul><li>Design and implement CI/CD pipelines using Azure DevOps and GitHub Actions.</li><li>Automate multi-environment deployments using Infrastructure as Code and gated release strategies.</li><li>Work across Dynamics 365 Finance & Operations, Customer Engagement, Power Platform and Copilot Studio.</li><li>Manage environment lifecycle, deployment, backup, refresh, security, IAM and secrets-management workflows.</li><li>Support Power Platform ALM, Dataverse capacity, connection references and controlled promotion to sandbox/production.</li></ul></div><div class="company">ITINERIS<br>HYDERABAD</div></div>
 <div class="job"><div class="year">SEP 2019<br>–<br>JUN 12 2026</div><div><div class="role-kicker">ACCENTURE</div><h3>Lead DevOps Engineer</h3><p>Worked with multiple US-based clients on Microsoft ERP platforms and cloud services, including Microsoft Dynamics 365 Finance & Operations and Commerce.</p><ul><li>Designed and owned end-to-end CI/CD for D365 FO/CE, including build, package, export/import and release automation.</li><li>Performed LCS deployment and maintenance for cloud-hosted and Tier 2+ environments.</li><li>Handled D365 e-commerce B2B/B2C setup and troubleshooting, data refresh and database restore operations.</li><li>Administered Windows servers, including performance tuning, patching and security hardening.</li><li>Implemented Azure RBAC, VPN configurations, firewall policies, secure secrets management and Group Policy controls.</li><li>Managed 300+ servers, remediated vulnerabilities, monitored security alerts and created Azure Automation runbooks.</li></ul></div><div class="company">ACCENTURE<br>HYDERABAD</div></div>
 <div class="job"><div class="year">2017<br>–<br>2019</div><div><div class="role-kicker">SRM UNIVERSITY</div><h3>Committee Head — Aaruush</h3><p>Leadership and event coordination experience through Aaruush at SRM University.</p><ul><li>Led a team of student coordinators and managed technical and non-technical events.</li><li>Handled event planning, execution, sponsorships and campus engagement.</li><li>Developed leadership, communication and organizational skills.</li></ul></div><div class="company">AARUUSH<br>SRM UNIVERSITY</div></div>
@@ -567,8 +654,9 @@ addEventListener('scroll',onScroll,{passive:true});addEventListener('resize',()=
     vault.classList.add('is-unlocked');
     status.textContent='UNLOCKED';
     heading.textContent="Thanks for entering the K-Vault, it's still preparing.";
-    description.textContent="";
+    description.textContent='';
     feedback.textContent='K-VAULT ACCESS ACCEPTED';
+    if(window.openKVaultKnowledge) window.openKVaultKnowledge();
   }
   function submit(){
     if(entered.length!==accessCode.length){feedback.textContent='ENTER THE 4-DIGIT CODE';return;}
@@ -577,8 +665,7 @@ addEventListener('scroll',onScroll,{passive:true});addEventListener('resize',()=
     void vault.offsetWidth;
     vault.classList.add('is-error');
     feedback.textContent='ACCESS DENIED · TRY AGAIN';
-    entered='';
-    render();
+    entered=''; render();
     setTimeout(resetError,450);
   }
   keypad.addEventListener('click',function(e){
@@ -599,4 +686,89 @@ addEventListener('scroll',onScroll,{passive:true});addEventListener('resize',()=
   render();
 })();
 </script>
+
+
+
+<script id="kvault-kb-final">
+(function(){
+ function init(){
+  var root=document.getElementById('kvaultKnowledgeBase');
+  if(!root)return;
+  root.hidden=true; root.style.display='none';
+  var data={
+      "azure-devops":{m:"AZURE DEVOPS",t:"Azure DevOps",b:""},
+      "dynamics-365-finance":{m:"DYNAMICS 365 FINANCE",t:"Dynamics 365 Finance",b:""},
+      "d365-introduction":{
+        m:"DYNAMICS 365 FINANCE · INTRODUCTION",t:"Introduction",
+        b:`<p><strong><a href="https://www.google.com/goto?url=CAESdQHrOzAVg353rPJJrx9PzTgSt4wR7vVRfsSzfzAVajFWCheyrzvI7o2ZQ5ct0rVXDjeUMhQdVJVzxIyo7VCFXQbqp5ceV4F8oMtiy0LiP0FMgk1GdrzCd8W-0QzXjVEqQCd5Ppj-Cs18rNVSBkmBzwvPozIxLw" target="_blank" rel="noopener noreferrer">Microsoft Dynamics 365 Finance</a></strong> is <strong>an enterprise-grade financial management cloud application designed to automate global financial operations, deliver AI-driven insights, and ensure regulatory compliance</strong>. Originally part of the legacy Dynamics AX (Axapta) platform evolved into Dynamics 365 Finance and Operations, it now operates as a standalone powerhouse optimized specifically for enterprise finance teams.</p>`
+      },
+      "power-platform":{m:"POWER PLATFORM",t:"Power Platform",b:""},
+      "power-bi":{m:"POWER BI",t:"Power BI",b:""},
+      "lcs":{m:"LCS",t:"LCS",b:""}
+    };
+  var meta=root.querySelector('#kvArticleMeta'),title=root.querySelector('#kvArticleTitle'),body=root.querySelector('#kvArticleBody');
+  root.querySelectorAll('.kvault-article-tab,.kvault-subsection-tab').forEach(function(btn){btn.addEventListener('click',function(){root.querySelectorAll('.kvault-article-tab,.kvault-subsection-tab').forEach(function(b){b.classList.remove('active')});btn.classList.add('active');var a=data[btn.dataset.article];if(a){meta.textContent=a.m;title.textContent=a.t;body.innerHTML=a.b||''}})});
+  window.openKVaultKnowledge=function(){root.hidden=false;root.style.display='';root.classList.remove('kvault-kb-opening');void root.offsetWidth;root.classList.add('kvault-kb-opening');setTimeout(function(){root.classList.remove('kvault-kb-opening')},950)};
+ }
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
+})();
+</script>
+<!-- NR-AI-ASSISTANT-LOCAL-V54 -->
+<style>
+#nrAiLauncher{position:fixed;right:24px;bottom:24px;z-index:9998;border:1px solid rgba(214,169,75,.7);background:rgba(10,12,16,.9);color:#e8c76b;border-radius:999px;padding:12px 17px;font:600 11px var(--mono,monospace);letter-spacing:.08em;box-shadow:0 10px 40px rgba(0,0,0,.3);backdrop-filter:blur(14px);cursor:pointer;transition:transform .2s,box-shadow .2s}
+#nrAiLauncher:hover{transform:translateY(-2px);box-shadow:0 14px 46px rgba(0,0,0,.4)}
+#nrAiPanel{position:fixed;right:24px;bottom:78px;width:min(390px,calc(100vw - 28px));height:min(600px,calc(100vh - 110px));z-index:9999;display:none;flex-direction:column;overflow:hidden;border:1px solid rgba(214,169,75,.38);border-radius:20px;background:rgba(11,13,18,.97);color:#e8e9ec;box-shadow:0 25px 90px rgba(0,0,0,.5);backdrop-filter:blur(18px);font-family:var(--mono,monospace)}
+#nrAiPanel.open{display:flex;animation:nrAiIn .28s ease-out}@keyframes nrAiIn{from{opacity:0;transform:translateY(12px) scale(.98)}to{opacity:1;transform:none}}
+.nr-ai-head{display:flex;align-items:center;justify-content:space-between;padding:16px 18px;border-bottom:1px solid rgba(255,255,255,.08)}
+.nr-ai-title{font-size:12px;letter-spacing:.12em}.nr-ai-sub{font-size:9px;color:#8f939c;margin-top:4px}.nr-ai-close{border:0;background:transparent;color:#aeb2ba;font-size:20px;cursor:pointer}.nr-ai-messages{flex:1;overflow:auto;padding:16px}.nr-ai-msg{max-width:88%;margin:0 0 12px;padding:11px 13px;border-radius:13px;font-size:11px;line-height:1.7;white-space:pre-wrap}.nr-ai-msg.ai{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.07)}.nr-ai-msg.user{margin-left:auto;background:rgba(214,169,75,.15);border:1px solid rgba(214,169,75,.25)}
+.nr-ai-quick{display:flex;gap:7px;overflow:auto;padding:0 14px 10px}.nr-ai-quick button{flex:0 0 auto;border:1px solid rgba(214,169,75,.3);background:transparent;color:#c9b477;border-radius:999px;padding:7px 9px;font:9px var(--mono);cursor:pointer}.nr-ai-form{display:flex;gap:8px;padding:12px;border-top:1px solid rgba(255,255,255,.08)}.nr-ai-input{flex:1;min-width:0;border:1px solid rgba(255,255,255,.12);border-radius:11px;background:rgba(255,255,255,.04);color:inherit;padding:11px;font:11px var(--mono);outline:none}.nr-ai-send{border:1px solid rgba(214,169,75,.55);background:#b48a2a;color:#fff;border-radius:11px;padding:0 13px;font:700 10px var(--mono);cursor:pointer}.nr-ai-send:disabled{opacity:.5;cursor:wait}
+body.light-mode #nrAiLauncher{background:rgba(255,255,255,.95);color:#315ea8;border-color:rgba(49,94,168,.35)}body.light-mode #nrAiPanel{background:rgba(250,251,253,.98);color:#23262c;border-color:rgba(49,94,168,.22)}body.light-mode .nr-ai-sub{color:#68707c}body.light-mode .nr-ai-msg.ai{background:#f1f4f8;border-color:#e0e5ec}body.light-mode .nr-ai-msg.user{background:#eaf0fa;border-color:#cddbef}body.light-mode .nr-ai-input{background:#fff;color:#23262c;border-color:#d9dee7}body.light-mode .nr-ai-quick button{color:#315ea8;border-color:#b8c9e2}
+@media(max-width:600px){#nrAiLauncher{right:14px;bottom:14px}#nrAiPanel{right:14px;bottom:66px;width:calc(100vw - 28px);height:min(620px,calc(100vh - 90px))}}
+</style>
+<button id="nrAiLauncher" type="button" aria-label="Open NR AI Assistant">✦ ASK NR AI</button>
+<section id="nrAiPanel" aria-label="NR AI Assistant">
+  <div class="nr-ai-head"><div><div class="nr-ai-title">NR AI ASSISTANT</div><div class="nr-ai-sub">Your guide to Nishanth Reddy's portfolio</div></div><button class="nr-ai-close" type="button" aria-label="Close">×</button></div>
+  <div class="nr-ai-messages" id="nrAiMessages"><div class="nr-ai-msg ai">Hi! I’m NR AI. Ask me about Nishanth, his experience, technologies, projects, or professional journey.</div></div>
+  <div class="nr-ai-quick"><button type="button">Who is Nishanth?</button><button type="button">Summarize his portfolio</button><button type="button">What technologies does he use?</button></div>
+  <form class="nr-ai-form" id="nrAiForm"><input class="nr-ai-input" id="nrAiInput" autocomplete="off" placeholder="Ask about the portfolio…"><button class="nr-ai-send" type="submit">SEND</button></form>
+</section>
+<script>
+(function(){
+ const launch=document.getElementById('nrAiLauncher'),panel=document.getElementById('nrAiPanel'),close=panel.querySelector('.nr-ai-close'),form=document.getElementById('nrAiForm'),input=document.getElementById('nrAiInput'),msgs=document.getElementById('nrAiMessages');
+ const quick=[...panel.querySelectorAll('.nr-ai-quick button')];
+ const portfolioFacts={
+   identity:"Nishanth Reddy is an Azure DevOps Engineer focused on reliable enterprise delivery, Azure, Dynamics 365, Power Platform, CI/CD, cloud operations and automation.",
+   experience:"Nishanth's portfolio highlights Azure DevOps engineering, CI/CD, cloud and enterprise delivery, Dynamics 365 Finance & Operations, Power Platform, Azure administration, security and cloud automation, including work with Itineris.",
+   technologies:"Key technologies and platforms shown in the portfolio include Azure DevOps, Azure, Dynamics 365 Finance & Operations, Power Platform, Power BI, LCS, Git/GitHub, CI/CD, cloud automation and security.",
+   certifications:"The portfolio highlights Microsoft certifications including AZ-104, AZ-400, AI-900, AI-102 and PL-900, along with additional professional certifications and recognitions.",
+   projects:"The portfolio includes selected delivery work and enterprise engineering experience centered on cloud delivery, DevOps, Dynamics 365, Power Platform, automation and reliable releases.",
+   journey:"The professional journey presented on the site is centered on growing from enterprise DevOps and Dynamics 365 delivery into broader cloud, automation and AI-enabled engineering capabilities.",
+   vault:"The K-Vault is a gated knowledge area. The local assistant can describe the public portfolio, but it does not reveal private K-Vault documents. Those documents are intended to be viewed through the K-Vault access flow.",
+   help:"Try asking: Who is Nishanth? · Summarize his portfolio · What technologies does he use? · What certifications does he have? · Tell me about his experience · What is the K-Vault?"
+ };
+ function add(text,who){const d=document.createElement('div');d.className='nr-ai-msg '+who;d.textContent=text;msgs.appendChild(d);msgs.scrollTop=msgs.scrollHeight;return d}
+ function open(){panel.classList.add('open');setTimeout(()=>input.focus(),80)} function shut(){panel.classList.remove('open')}
+ function normalize(q){return q.toLowerCase().replace(/[^a-z0-9\s-]/g,' ').replace(/\s+/g,' ').trim()}
+ function localAnswer(q){
+   const x=normalize(q);
+   if(!x)return 'Please ask me something about the portfolio.';
+   if(/^(hi|hello|hey|good morning|good afternoon|good evening)\b/.test(x)) return "Hi! I’m NR AI. I can answer questions about Nishanth Reddy’s public portfolio, experience, technologies, certifications, projects and the K-Vault.";
+   if(/who is|who s nishanth|tell me about nishanth|about nishanth|introduce/.test(x)) return portfolioFacts.identity;
+   if(/summar|overview|brief|portfolio/.test(x)) return "Nishanth Reddy’s portfolio presents an Azure DevOps Engineer focused on reliable enterprise delivery. It covers Azure, CI/CD, Dynamics 365, Power Platform, cloud operations, automation, security, selected delivery work, certifications and a gated K-Vault knowledge area.";
+   if(/technolog|tech stack|tools|platform/.test(x)) return portfolioFacts.technologies;
+   if(/certif|credential|az-104|az 104|az-400|az 400|ai-102|ai 102|pl-900|pl 900/.test(x)) return portfolioFacts.certifications;
+   if(/experience|career|work|job|itineris|professional journey|journey/.test(x)) return portfolioFacts.experience;
+   if(/project|delivery|client|enterprise/.test(x)) return portfolioFacts.projects;
+   if(/vault|k-vault|knowledge/.test(x)) return portfolioFacts.vault;
+   if(/help|what can you|how do i ask|questions/.test(x)) return portfolioFacts.help;
+   return "I’m the local NR AI Assistant, so I work without an API or internet connection. I can answer common questions about the public portfolio, but I won’t invent details or expose private K-Vault documents. Try asking about Nishanth, his experience, technologies, certifications, projects, or the K-Vault.";
+ }
+ launch.onclick=open;close.onclick=shut;
+ quick.forEach(b=>b.onclick=()=>{input.value=b.textContent;form.requestSubmit()});
+ form.addEventListener('submit',e=>{e.preventDefault();const q=input.value.trim();if(!q)return;add(q,'user');input.value='';const wait=add('Thinking…','ai');form.querySelector('button').disabled=true;
+   setTimeout(()=>{wait.textContent=localAnswer(q);form.querySelector('button').disabled=false;msgs.scrollTop=msgs.scrollHeight},220);
+ });
+})();
+</script>>
+
 </body></html>
